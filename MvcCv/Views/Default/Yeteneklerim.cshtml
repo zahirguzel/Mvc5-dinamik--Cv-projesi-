@@ -1,0 +1,42 @@
+﻿@using MvcCv.Models.Entity
+@model List<TblYeteneklerim>
+
+
+<div class="resume-section-content">
+    <h2 class="mb-5">Yeteneklerim</h2>
+    <div class="subheading mb-3">Programlama Dilleri ve Araçlar</div>
+    <ul class="list-inline dev-icons">
+        <li class="list-inline-item"><i class="fab fa-html5" title="HTML5"></i></li>
+
+        <li class="list-inline-item"><i class="fab fa-css3-alt" title="CSS3"></i></li>
+
+        <li class="list-inline-item"><i class="fab fa-bootstrap" title="Bootstrap"></i></li>
+
+        <li class="list-inline-item"><i class="fab fa-java" title="Java"></i></li>
+
+        <li class="list-inline-item"><i class="fab fa-php" title="PHP"></i></li>
+
+        <li class="list-inline-item"><i class="fas fa-database" title="SQL & Veritabanı"></i></li>
+
+        <li class="list-inline-item"><i class="fab fa-windows" title="C# & .NET"></i></li>
+        <li class="list-inline-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" width="48" height="48" title="C# Programlama Dili" />
+        </li>
+
+        <li class="list-inline-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt=".NET" width="48" height="48" title=".NET Framework" />
+        </li>
+    </ul>
+
+    @foreach (var x in Model)
+    {
+    <div class="subheading mb-3"></div>
+    <ul class="fa-ul mb-0">
+        <li>
+            <span class="fa-li"><i class="fas fa-check"></i></span>
+            @x.Yetenek
+        </li>
+        
+    </ul>
+    }
+</div>
